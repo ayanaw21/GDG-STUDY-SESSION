@@ -52,7 +52,7 @@ const Tasks = () => {
         <button className="btn add-btn" onClick={enableAdd}>add tasks</button>
       </article>
     ) : (
-        <article>
+        <article className={isAddButtonOpen ? 'review hide-review' : 'review'}>
             <p>No tasks available. Add a task to get started!</p>
             <button  className="btn add-btn" style={{width : '100%' , marginTop : '1rem'}} onClick={enableAdd}>add tasks</button>
         </article>

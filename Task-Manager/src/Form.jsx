@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 
 import { useGlobalContext } from "./context";
+import { FaTimes } from "react-icons/fa";
 const Form = () => {
 	const {editTask,setEditTask,newTitle,newDesc,newDueDate,setNewTitle,setNewDesc,setNewDueDate,handleSubmit, isAddButtonOpen,disableAdd} = useGlobalContext()
 	
@@ -17,12 +18,17 @@ const Form = () => {
 			setNewDueDate("");
 		}
 	}, [editTask]);
+	
 
 	
 	return (
 		<form onSubmit={handleSubmit} className={isAddButtonOpen ? 'form show-form' : 'form'} >
 			
 			<div className='form-control'>
+				<button className="close-modal-btn" onClick={disableAdd}>
+					<FaTimes/>
+				</button>
+				<h4>Task Manager</h4>
 				<label htmlFor="title">title</label>
 				<input
 					name="title"
@@ -44,7 +50,7 @@ const Form = () => {
 					value={newDueDate}
 					onChange={(e) => setNewDueDate(e.target.value)} // Fixed here
 				/>
-				<button type="submit" className="btn" onClick={disableAdd}>
+				<button type="submit" className="btn" >
 					{editTask ? "Update Task" : "Add Task"}
 				</button>
 				{editTask && (

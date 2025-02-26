@@ -24,6 +24,7 @@ export const AppProvider = ({ children }) => {
     }
     const disableAdd = ()=>{
         setIsAddButtonOpen(false)
+		return
     }
 
 
@@ -63,6 +64,7 @@ export const AppProvider = ({ children }) => {
 
 
 	const handleEdit = (task) => {
+		enableAdd();
 		setEditTask(task);
 	};
 
@@ -101,10 +103,12 @@ export const AppProvider = ({ children }) => {
 		}
 		if (editTask) {
 			updateTask(editTask.id, newTitle, newDesc, newDueDate);
+			
 			setEditTask(null); 
 		} else {
 			addTask(newTitle, newDesc, newDueDate);
 		}
+		disableAdd()
 		setNewTitle("");
 		setNewDesc("");
 		setNewDueDate("");

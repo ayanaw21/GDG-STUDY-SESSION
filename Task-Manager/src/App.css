@@ -192,12 +192,10 @@ ul {
 	padding: 2rem 2.5rem;
 	/* margin: 3rem auto; */
 
-	/* /* position: fixed; */
+	position: relative;
 	visibility: hidden;
 	display: none;
-	place-content: center;
-	opacity: 0;
-	z-index: -1; 
+	
 }
 
 .form-label {
@@ -267,7 +265,7 @@ ul {
 
 .section-center {
 	width: 90vw;
-	margin: 0 auto;
+	margin: 0 auto 3rem;
 	margin-top: 8rem;
 	max-width: 30rem;
 	background: var(--white);
@@ -290,6 +288,16 @@ form h4 {
 	gap: 1rem;
 	text-transform: capitalize;
 	
+}
+ .form-control .close-modal-btn {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	font-size: 2rem;
+	background: transparent;
+	color: var(--red-dark);
+	border-color: transparent;
+	cursor: pointer;
 }
 .show-form {
 	display: block;
@@ -379,6 +387,7 @@ h5 {
 }
 .btn-container {
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 	justify-content: center;
 }
 .btn-control {

@@ -1,0 +1,64 @@
+{
+    "jobs": [
+        {
+            "id" : 1,
+            "title": "Frontend Developer",
+            "salary": "50k",
+            "location": "New York"
+        },
+        {
+            "id" : 2,
+            "title": "Backend Developer",
+            "salary": "60k",
+            "location": "San Francisco"
+        },
+        {
+            "id" : 3,
+            "title": "Fullstack Developer",
+            "salary": "70k",
+            "location": "Los Angeles"
+        },
+        {
+            "id" : 4,
+            "title": "DevOps Engineer",
+            "salary": "80k",
+            "location": "Chicago"
+        },
+        {
+            "id" : 5,
+            "title": "Data Scientist",
+            "salary": "90k",
+            "location": "Seattle"
+        },
+        {
+            "id" : 6,
+            "title": "Machine Learning Engineer",
+            "salary": "100k",
+            "location": "Boston"
+        },
+        {
+            "id" : 7,
+            "title": "Product Manager",
+            "salary": "110k",
+            "location": "Austin"
+        },
+        {
+            "id" : 8,
+            "title": "UI/UX Designer",
+            "salary": "120k",
+            "location": "Denver"
+        },
+        {
+            "id" : 9,
+            "title": "QA Engineer",
+            "salary": "130k",
+            "location": "Portland"
+        },
+        {
+            "id" : 10,
+            "title": "Security Engineer",
+            "salary": "140k",
+            "location": "Miami"
+        }   
+    ]
+}
